@@ -2,6 +2,7 @@
 name: "Schedule: Sync labels"
 
 on: # yamllint disable-line rule:truthy
+  workflow_call:
   workflow_dispatch:
   schedule:
     - cron: "0 * * * *"
@@ -10,7 +11,6 @@ jobs:
   labels:
     name: Sync Labels
     runs-on: ubuntu-latest
-    if: github.repository == 'k8s-at-home/charts'
     steps:
       - name: Checkout
         uses: actions/checkout@v3

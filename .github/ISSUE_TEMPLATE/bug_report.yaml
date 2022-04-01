@@ -1,5 +1,5 @@
 name: ⚙️ Bug Report 🪛
-description: Request new apps to be added to TrueCharts Catalog
+description: Report a bug 🪲
 labels: ["bug"]
 body:
   - type: markdown

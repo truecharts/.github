@@ -1,1 +1,11 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Need help?
+    url: https://discord.gg/tVsPTHWTtr
+    about: Ask our support staff on Discord!
+  - name: Not sure where to start?
+    url: https://truecharts.org/manual/Quick-Start%20Guides/01-Adding-TrueCharts/
+    about: Start by reading the quick-start guides!
+  - name: Need more guides?
+    url: https://www.youtube.com/c/TrueCharts
+    about: Visit our Youtube channel!

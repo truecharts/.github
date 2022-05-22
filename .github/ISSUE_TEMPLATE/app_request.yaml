@@ -33,5 +33,3 @@ body:
           required: true
         - label: I've checked all open and closed pull requests and my request is not there.
           required: true
-        - label: I've checked the [website](https://truecharts.org/apps/app-requests/) and my request is not there.
-          required: true

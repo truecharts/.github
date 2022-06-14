@@ -32,7 +32,7 @@ body:
         FOUND IN: System Settings > General > OS Version
       multiple: false
       options:
-        - "22.02.0"
+        - "22.02.1"
     validations:
       required: true
   - type: input

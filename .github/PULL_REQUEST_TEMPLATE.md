@@ -28,3 +28,16 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] ⚠️ My changes generate no new warnings
 - [ ] 🧪 I have added tests to this description that prove my fix is effective or that my feature works
 - [ ] ⬆️ I increased versions for any altered app according to semantic versioning
+
+**➕ App addition**
+
+If this PR is an app addition please make sure you have done the following.
+
+- [ ] 🖼️ I have opened a PR on [truecharts/pub](https://github.com/truecharts/pub) adding the app icon.
+- [ ] 🪞 I have opened a PR on [truecharts/containers](https://github.com/truecharts/containers) adding the container to TrueCharts mirror repo.
+
+---
+
+_Please don't blindly check all the boxes. Read them and only check those that apply.
+Those checkboxes are there for the reviewer to see what is this all about and
+the status of this PR with a quick glance._

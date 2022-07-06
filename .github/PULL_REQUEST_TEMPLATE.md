@@ -40,4 +40,4 @@ If this PR is an app addition please make sure you have done the following.
 
 _Please don't blindly check all the boxes. Read them and only check those that apply.
 Those checkboxes are there for the reviewer to see what is this all about and
-on the status of this PR with a quick glance._
+the status of this PR with a quick glance._

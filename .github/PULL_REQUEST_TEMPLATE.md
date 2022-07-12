@@ -33,7 +33,7 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 
 If this PR is an app addition please make sure you have done the following.
 
-- [ ] 🖼️ I have opened a PR on [truecharts/pub](https://github.com/truecharts/pub) adding the app icon.
+- [ ] 🪞 I have added an icon in the Chart's root directory called `icon.png`
 - [ ] 🪞 I have opened a PR on [truecharts/containers](https://github.com/truecharts/containers) adding the container to TrueCharts mirror repo.
 
 ---

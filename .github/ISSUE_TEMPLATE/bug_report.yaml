@@ -33,6 +33,7 @@ body:
       multiple: false
       options:
         - "22.02.3"
+        - "N/A"
     validations:
       required: true
   - type: input

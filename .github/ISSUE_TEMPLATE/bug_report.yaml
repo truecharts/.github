@@ -33,7 +33,7 @@ body:
       multiple: false
       options:
         - "22.02.3"
-        - "N/A"
+        - "Not using SCALE"
     validations:
       required: true
   - type: input

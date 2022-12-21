@@ -88,6 +88,8 @@
   color: ffffff
 - name: "incomplete-template"
   color: ffffff
+- name: "blocked"
+  color: ffffff
 
 - name: "new-chart"
   color: "C2E0C6"

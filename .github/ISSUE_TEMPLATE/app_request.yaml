@@ -1,7 +1,7 @@
 name: 📃 App Request 🙏
 description: Request new apps to be added to TrueCharts Catalog ➕
 title: "[Add]: "
-labels: ["New App Request"]
+labels: ["New-App"]
 body:
   - type: markdown
     attributes:

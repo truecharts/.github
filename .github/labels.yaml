@@ -91,10 +91,6 @@
 - name: "blocked"
   color: ffffff
 
-- name: "new-chart"
-  color: "C2E0C6"
-  description: >-
-    Categorises a PR or issue that references a new Helm chart.
 - name: do-not-merge
   color: "ee0701"
   description: >-
@@ -111,7 +107,7 @@
   color: "D4C5F9"
   description: >-
     Categorises a PR or issue that has not been active for a specified time.
-- name: "New App Request"
+- name: "New App"
   color: "fef2c0"
   description: >-
     Categorises a PR or issue that references a new App.

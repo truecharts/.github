@@ -8,7 +8,10 @@ body:
         Thanks for making this bug report.
         
         - App version, means **our** version, that's the second part after `_`
-
+        - When using an outdated version of SCLAE, your issue will, likely, be closed and locked without any comment
+        - Apps in the *incubator* train, **CANNOT be reported as outdated**, as they might not even be functional at all
+        - Apps in the *stable* train, can be reported after the container update is at least **1 month old**
+        - Apps in the *Enterprise* and *dependency* trains, can be reported after the container update is **at least 7 days old**
         ---
 
   - type: input

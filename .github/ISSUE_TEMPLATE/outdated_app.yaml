@@ -1,0 +1,94 @@
+name: ⚙️ Report Outdated App 🪛
+description: Report a Outdated App
+labels: ["outdated"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for making this bug report.
+        
+        - App version, means **our** version, that's the second part after `_`
+
+        ---
+
+  - type: input
+    id: app-name
+    attributes:
+      label: App Name
+      description: |
+        The name of the app having the issue.
+    validations:
+      required: true
+  - type: dropdown
+    id: os-version
+    attributes:
+      label: SCALE Version
+      description: |
+        The version of truenas scale you are currently running.
+        FOUND IN: System Settings > General > OS Version
+      multiple: false
+      options:
+        - "22.02.3"
+        - "22.02.4"
+        - "22.12.0"
+        - "Not using SCALE"
+    validations:
+      required: true
+  - type: dropdown
+    id: train
+    attributes:
+      label: Train Name
+      description: |
+        The version of truenas scale you are currently running.
+        FOUND IN: System Settings > General > OS Version
+      multiple: false
+      options:
+        - "incubator"
+        - "stable"
+        - "enterprise"
+        - "dependency"
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App Version
+      description: |
+        The version of the app having the issue and versions of any apps being used in conjunction.
+        FOUND IN: Apps > Installed Applications
+    validations:
+      required: true
+
+  - type: input
+    id: latest-container
+    attributes:
+      label: Latest Available Container Version
+      description: |
+        The version of the latest released upstream container
+    validations:
+      required: true
+
+  - type: input
+    id: latest-container-link
+    attributes:
+      label: Link to container
+      description: |
+        Link to the container
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: add-contaxt
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: I've read and agree with the following
+      options:
+        - label: I've checked all open and closed issues and my issue is not there.
+          required: true

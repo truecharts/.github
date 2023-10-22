@@ -37,6 +37,7 @@ body:
         - "22.12.0"
         - "22.12.1"
         - "22.12.2"
+        - "22.12.4"
         - "Not using SCALE"
     validations:
       required: true

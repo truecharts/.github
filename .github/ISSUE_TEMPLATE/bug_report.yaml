@@ -26,18 +26,20 @@ body:
   - type: dropdown
     id: os-version
     attributes:
-      label: SCALE Version
+      label: Operating System
       description: |
-        The version of truenas scale you are currently running.
-        FOUND IN: System Settings > General > OS Version
+        The type and version of the operating system you are currently running.
+        For TrueNAS SCALE FOUND IN: System Settings > General > OS Version
       multiple: false
       options:
-        - "22.02.3"
-        - "22.02.4"
-        - "22.12.0"
-        - "22.12.1"
-        - "22.12.2"
-        - "Not using SCALE"
+        - "TrueNAS SCALE 22.12.4.1 or prior"
+        - "TrueNAS SCALE 22.12.4.2"
+        - "TrueNAS SCALE 23.10.0'or 23.10.0.1"
+        - "TrueNAS SCALE 23.10.1"
+        - "nightly"
+        - "Talos-OS 1.5"
+        - "Talos-OS 1.6"
+        - "Other (please specify)"
     validations:
       required: true
   - type: input

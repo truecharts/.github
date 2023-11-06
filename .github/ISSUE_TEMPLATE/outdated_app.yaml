@@ -95,3 +95,7 @@ body:
       options:
         - label: I've checked all open and closed issues and my issue is not there.
           required: true
+        - label: I confirm that this chart is outdated for at least 7 days (enterprise/operator train) or 1 month (stable train).
+          required: true
+        - label: I confirm that this is not an incubator chart.
+          required: true

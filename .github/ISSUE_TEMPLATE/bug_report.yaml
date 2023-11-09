@@ -38,12 +38,18 @@ body:
         - "TrueNAS SCALE 23.10.1"
         - "TrueNAS SCALE nightly"
         - "Talos-OS 1.5 (Using FluxCD)"
-        - "Talos-OS 1.6 (Using FluxCD)"
         - "Talos-OS 1.5 (Using Rancher)"
+        - "Talos-OS 1.6 (Using FluxCD)"
         - "Talos-OS 1.6 (Using Rancher)"
-        - "Other (please specify)"
+        - "Other Using FluxCD (please specify)"
+        - "Other Using Rancher (please specify)"
+        - "Other Using Helm (please specify)"
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        *When not runing Talos-OS or TrueNAS SCALE, please write down the OS, Kubernetes and Helm versions.*
   - type: input
     id: app-version
     attributes:

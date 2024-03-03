@@ -118,3 +118,7 @@
   description: >-
     Categorises a PR or issue that references a new App.
 
+- name: "$$BOUNTY$$"
+  color: "fef2c0"
+  description: >-
+    Issues that have a bounty attached

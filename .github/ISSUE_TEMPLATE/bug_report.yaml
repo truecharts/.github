@@ -9,18 +9,19 @@ body:
 
         ⚠️ Mind your title. ⚠️
 
-        - "App stuck in deploying state" - Is not the title/description of your actual bug.
-        - "Appname not working" - Is not the title/description of your actual bug.
+        - "chart stuck in deploying state" - Is not the title/description of your actual bug.
+        - "chartname not working" - Is not the title/description of your actual bug.
         - Don't refer version in title.
+        - Always prefix an issue with `[chart-name]`
 
         ---
 
   - type: input
-    id: app-name
+    id: chart-name
     attributes:
-      label: App Name
+      label: chart Name
       description: |
-        The name of the app having the issue.
+        The name of the chart having the issue.
     validations:
       required: true
   - type: dropdown
@@ -32,64 +33,73 @@ body:
         For TrueNAS SCALE FOUND IN: System Settings > General > OS Version
       multiple: false
       options:
-        - "TrueNAS SCALE 22.12.4.1 or prior"
-        - "TrueNAS SCALE 22.12.4.2"
-        - "TrueNAS SCALE 23.10.0'or 23.10.0.1"
+        - "TrueNAS SCALE 22.12.4.2 or prior"
+        - "TrueNAS SCALE 23.10.0"
         - "TrueNAS SCALE 23.10.1"
-        - "TrueNAS SCALE nightly"
-        - "Talos-OS 1.5 (Using FluxCD)"
-        - "Talos-OS 1.5 (Using Rancher)"
-        - "Talos-OS 1.6 (Using FluxCD)"
-        - "Talos-OS 1.6 (Using Rancher)"
-        - "Other Using FluxCD (please specify)"
-        - "Other Using Rancher (please specify)"
-        - "Other Using Helm (please specify)"
+        - "TrueNAS SCALE 23.10.2"
+        - "Talos-OS 1.5"
+        - "Talos-OS 1.6"
     validations:
       required: true
-  - type: markdown
+  - type: dropdown
+    id: deployment-method
     attributes:
-      value: |
-        *When not runing Talos-OS or TrueNAS SCALE, please write down the OS, Kubernetes and Helm versions.*
-  - type: input
-    id: app-version
-    attributes:
-      label: App Version
+      label: Deployment Method
       description: |
-        The version of the app having the issue and versions of any apps being used in conjunction.
-        FOUND IN: Apps > Installed Applications
+        Please select how your deployed the Chart in question
+      multiple: false
+      options:
+        - "TrueNAS SCALE charts"
+        - "FluxCD"
+        - "Kubecharts"
+        - "Rancher"
+        - "ArgoCD"
+    validations:
+      required: true
+  - type: input
+    id: chart-version
+    attributes:
+      label: Chart Version
+      description: |
+        The version of the chart having the issue and versions of any charts being used in conjunction.
+        For SCALE, FOUND IN: charts > Installed Applications
     validations:
       required: true
   - type: textarea
-    id: app-events
+    id: chart-events
     attributes:
-      label: Application Events
+      label: Kubernetes Events
       description: |
-        Debug information from the app(s) specifically
-        FOUND IN: Apps > Installed Applications > (Click on the app name) > Click the caret next to application events and include a screenshot here.
+        Debug information from the chart(s) specifically
+        For SCALE, FOUND IN: charts > Installed Applications > (Click on the chart name) > Click the caret next to chartlication events and include a screenshot here.
       render: Shell
     validations:
       required: true
   - type: textarea
-    id: app-logs
+    id: chart-logs
     attributes:
-      label: Application Logs
+      label: chartlication Logs
       description: |
-        Log output from the containers involved in the app
-        FOUND IN: Apps > Installed Applications > (Click the 3 dots on the top right of the app box) > Logs
-        Open the logs for each pod used for the app and copy/paste here.
+        Log output from the containers involved in the chart
+        For SCALE, FOUND IN: charts > Installed Applications > (Click the 3 dots on the top right of the chart box) > Logs
+        Open the logs for each pod used for the chart and copy/paste here.
 
         Note: It can take a moment for the logs to show on the logs screen.
       render: Shell
     validations:
       required: true
   - type: textarea
-    id: app-config
+    id: chart-config
     attributes:
-      label: Application Configuration
+      label: Chart Configuration
       description: |
-        The configuration settings for the app (Make sure to include what you have changed AND what you didn't change).
+        The configuration settings for the chart.
+        For Helm: your custom values.yaml file
+
+        For SCALE:
         If possible use the edit features in your screenshot tool to highlight the portions you changed intentionally.
-        FOUND IN: Apps > Installed Applications > (Click the 3 dots on the top right of the app box) > Edit
+        FOUND IN: charts > Installed Applications > (Click the 3 dots on the top right of the chart box) > Edit
+        (Make sure to include what you have changed AND what you didn't change)
     validations:
       required: true
   - type: textarea
@@ -104,7 +114,7 @@ body:
     attributes:
       label: To Reproduce
       description: |
-        Make sure that if you follow these steps again yourself the bug happens again. If it doesn't it's Probably a configuration error and should be handled with a support ticket on the discord.
+        Make sure that if you follow these steps again yourself the bug hchartens again. If it doesn't it's Probably a configuration error and should be handled with a support ticket on the discord.
         Steps to reproduce the behavior:
       placeholder: |
         1. Go to '...'
@@ -117,14 +127,14 @@ body:
     id: exp-behaviour
     attributes:
       label: Expected Behavior
-      description: A clear and concise description of what you expected to happen.
+      description: A clear and concise description of what you expected to hcharten.
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
       label: Screenshots
-      description: If applicable, add screenshots to help explain your problem.
+      description: If chartlicable, add screenshots to help explain your problem.
     validations:
       required: true
   - type: textarea
@@ -140,4 +150,6 @@ body:
       label: I've read and agree with the following
       options:
         - label: I've checked all open and closed issues and my issue is not there.
+          required: true
+        - label: I've prefixed my issue title with `[Chart-Name]`
           required: true

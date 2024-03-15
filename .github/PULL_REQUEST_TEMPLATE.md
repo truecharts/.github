@@ -28,6 +28,7 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] ⚠️ My changes generate no new warnings
 - [ ] 🧪 I have added tests to this description that prove my fix is effective or that my feature works
 - [ ] ⬆️ I increased versions for any altered app according to semantic versioning
+- [ ] I made sure the title starts with `feat(chart-name):`, `fix(chart-name):` or `chore(chart-name):`
 
 **➕ App addition**
 

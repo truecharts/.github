@@ -34,9 +34,7 @@ body:
       multiple: false
       options:
         - "TrueNAS SCALE 22.12.4.2 or prior"
-        - "TrueNAS SCALE 23.10.0"
-        - "TrueNAS SCALE 23.10.1"
-        - "TrueNAS SCALE 23.10.2"
+        - "TrueNAS SCALE 23.10.2 or prior"
         - "TrueNAS SCALE 24.04.0"
         - "Talos-OS 1.5"
         - "Talos-OS 1.6"

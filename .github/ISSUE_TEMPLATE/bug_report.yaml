@@ -73,7 +73,7 @@ body:
   - type: textarea
     id: chart-logs
     attributes:
-      label: chartlication Logs
+      label: Chart Logs
       description: |
         Log output from the containers involved in the chart
       render: Shell

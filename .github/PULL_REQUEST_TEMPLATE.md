@@ -10,6 +10,7 @@ Please include a summary of the change and which issue is fixed. Please also inc
 - [ ] 🪛 Bugfix
 - [ ] ⚠️ Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] 🔃 Refactor of current code
+- [ ] 📜 Documentation Changes
 
 **🧪 How Has This Been Tested?**
 <!--
@@ -24,11 +25,10 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] ⚖️ My code follows the style guidelines of this project
 - [ ] 👀 I have performed a self-review of my own code
 - [ ] #️⃣ I have commented my code, particularly in hard-to-understand areas
-- [ ] 📄 I have made corresponding changes to the documentation
-- [ ] ⚠️ My changes generate no new warnings
+- [ ] 📄 I have made changes to the documentation
 - [ ] 🧪 I have added tests to this description that prove my fix is effective or that my feature works
 - [ ] ⬆️ I increased versions for any altered app according to semantic versioning
-- [ ] I made sure the title starts with `feat(chart-name):`, `fix(chart-name):` or `chore(chart-name):`
+- [ ] I made sure the title starts with `feat(chart-name):`, `fix(chart-name):`, `chore(chart-name):`, `docs(chart-name):` or `fix(docs):`
 
 **➕ App addition**
 

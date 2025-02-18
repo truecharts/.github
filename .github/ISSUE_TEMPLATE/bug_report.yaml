@@ -32,9 +32,9 @@ body:
         The type and version of the operating system you are currently running.
       multiple: false
       options:
+        - "Talos-OS 1.9"
+        - "Talos-OS 1.8"
         - "Talos-OS 1.7"
-        - "Talos-OS 1.6"
-        - "Talos-OS 1.5"
         - "other"
     validations:
       required: true
@@ -122,22 +122,20 @@ body:
       label: Screenshots
       description: If chartlicable, add screenshots to help explain your problem.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: add-contaxt
     attributes:
       label: Additional Context
       description: Add any other context about the problem here.
     validations:
-      required: true
+      required: false
   - type: checkboxes
     id: terms
     attributes:
       label: I've read and agree with the following
       options:
         - label: I've checked all open and closed issues and my issue is not there.
-          required: true
-        - label: I've understand TrueNAS SCALE Apps are deprecated and TrueCharts does not accept TrueNAS SCALE related issues
           required: true
         - label: I've prefixed my issue title with `[Chart-Name]`
           required: true

@@ -7,11 +7,10 @@ body:
       value: |
         Thanks for making this bug report.
         
-        - App version, means **our** version, that's the second part after `_`
-        - When using an outdated version of SCLAE, your issue will, likely, be closed and locked without any comment
+        - Chart version, means **our** version
         - Apps in the *incubator* train, **CANNOT be reported as outdated**, as they might not even be functional at all
         - Apps in the *stable* train, can be reported after the container update is at least **1 month old**
-        - Apps in the *Enterprise* and *dependency* trains, can be reported after the container update is **at least 7 days old**
+        - Apps in the *premium* and *system* trains, can be reported after the container update is **at least 7 days old**
         ---
 
   - type: input
@@ -25,43 +24,39 @@ body:
   - type: dropdown
     id: os-version
     attributes:
-      label: SCALE Version
+      label: Operating System
       description: |
-        The version of truenas scale you are currently running.
-        FOUND IN: System Settings > General > OS Version
+        The type and version of the operating system you are currently running.
       multiple: false
       options:
-        - "22.02.3"
-        - "22.02.4"
-        - "22.12.0"
-        - "Not using SCALE"
+        - "Talos-OS 1.9"
+        - "Talos-OS 1.8"
+        - "Talos-OS 1.7"
+        - "other"
     validations:
       required: true
-  - type: dropdown
+  - type: dropdown 
     id: train
     attributes:
       label: Train Name
       description: |
-        The version of truenas scale you are currently running.
-        FOUND IN: System Settings > General > OS Version
+        The Train the outdated Chart is in.
       multiple: false
       options:
         - "incubator"
         - "stable"
-        - "enterprise"
-        - "dependency"
+        - "premium"
+        - "system"
     validations:
       required: true
   - type: input
-    id: app-version
+    id: chart-version
     attributes:
-      label: App Version
+      label: Chart Version
       description: |
-        The version of the app having the issue and versions of any apps being used in conjunction.
-        FOUND IN: Apps > Installed Applications
+        The version of the chart beeing outdated.
     validations:
       required: true
-
   - type: input
     id: latest-container
     attributes:
@@ -70,7 +65,6 @@ body:
         The version of the latest released upstream container
     validations:
       required: true
-
   - type: input
     id: latest-container-link
     attributes:
@@ -79,15 +73,13 @@ body:
         Link to the container
     validations:
       required: true
-
-
   - type: textarea
     id: add-contaxt
     attributes:
       label: Additional Context
       description: Add any other context about the problem here.
     validations:
-      required: true
+      required: false
   - type: checkboxes
     id: terms
     attributes:
@@ -95,7 +87,7 @@ body:
       options:
         - label: I've checked all open and closed issues and my issue is not there.
           required: true
-        - label: I confirm that this chart is outdated for at least 7 days (enterprise/operator train) or 1 month (stable train).
+        - label: I confirm that this chart is outdated for at least 7 days (premium/system train) or 1 month (stable train).
           required: true
         - label: I confirm that this is not an incubator chart.
           required: true

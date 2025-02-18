@@ -1,4 +1,4 @@
-## Hi there 👋
+# Hi there 👋
 
 TrueCharts is the biggest single Helm-Chart repository out-there for your kubernetes cluster!
 
@@ -13,21 +13,14 @@ TrueCharts is the biggest single Helm-Chart repository out-there for your kubern
 🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 -->
 
-### Meet the Core-Team:
+## Meet the Core-Team
 
-#### MrPuffin
+### MrPuffin
 
-#### stavros-k
+### stavros-k
 
-#### kofeyh
+### StevenMcElligott
 
-#### StevenMcElligott
+### Alfi0812
 
-#### Alfi0812
-
-
-
-
-
-
-
+### kqmaverick

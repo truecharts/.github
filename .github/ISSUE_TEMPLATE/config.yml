@@ -4,11 +4,5 @@ contact_links:
     url: https://discord.gg/tVsPTHWTtr
     about: Ask our support staff on Discord!
   - name: Not sure where to start?
-    url: https://truecharts.org/manual/intro/
+    url: https://truecharts.org/guides/
     about: Start by reading the quick-start guides!
-  - name: Need more guides?
-    url: https://www.youtube.com/c/TrueCharts
-    about: Visit our Youtube channel!
-  - name: Request a new chart?
-    url: https://discord.gg/tVsPTHWTtr
-    about: Ask in the designated channel on Discord!
